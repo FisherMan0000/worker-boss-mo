@@ -574,12 +574,7 @@ export default {
   async fetch(request: Request, env: any): Promise<Response> {
     // CORS headers
     const headers = {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-      "Content-Type": "application/json",
-    };
-
+      "Access-Control-Allow-Origin": "https://boss-mo.pages.dev",
     if (request.method === "OPTIONS") {
       return new Response(null, { headers });
     }
