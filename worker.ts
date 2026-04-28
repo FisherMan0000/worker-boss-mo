@@ -575,6 +575,11 @@ export default {
     // CORS headers
     const headers = {
       "Access-Control-Allow-Origin": "https://boss-mo.pages.dev",
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+      "Content-Type": "application/json",
+    };
+
     if (request.method === "OPTIONS") {
       return new Response(null, { headers });
     }
